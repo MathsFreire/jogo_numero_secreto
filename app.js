@@ -1,29 +1,5 @@
-// function exibeConsole() {
-//     let nome= 'Matheus';
-//     console.log(`Olá ${nome}.`);
-// }
-
-// exibeConsole();
-
-// function dobraNumero(numero) {
-//     return dobro = numero * 2;
-// }
-
-// console.log(dobraNumero(10));
-
-// function calculaMedia(nota1, nota2, nota3) {
-//     return (nota1 + nota2 + nota3) / 3;
-// }
-
-//console.log(calculaMedia(7, 10, 20));
-
-// function maiorNumero(numero1, numero2, numero3) {
-//     return Math.max(numero1, numero2, numero3);
-// }
-
-// console.log(maiorNumero(20, 10, 80));
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -34,7 +10,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+    exibirTextoNaTela('p', `Escolha um número entre 1 e ${numeroLimite}`);
 }
 
 exibirMensagemInicial();
